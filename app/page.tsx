@@ -1,43 +1,56 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { ArrowRight, Layers, Code, Palette } from "lucide-react"
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ArrowRight, Layers, Code, Palette } from 'lucide-react';
 
-import Image from "next/image"
-import myImage from "public/isaganiesteron-image.png"
+import Image from 'next/image';
+import myImage from 'public/isaganiesteron-image.png';
 
 export default function Home() {
-	return (
-		<>
-			{/* Hero Section */}
-			<section className="container mx-auto flex flex-col items-center justify-center gap-6 px-4 pb-8 pt-16 md:pb-12 md:pt-24 lg:py-32">
-				<div className="mx-auto flex max-w-[780px] flex-col items-center gap-4 text-center">
-					<div className="flex flex-row items-center">
-						<div className="w-4/12 rounded-full overflow-hidden">
-							<Image src={myImage} width={400} height={400} alt="An image of Isagani Esteron with neon green background" />
-						</div>
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="container mx-auto flex flex-col items-center justify-center gap-6 px-4 pb-8 pt-16 md:pb-12 md:pt-24 lg:py-32">
+        <div className="mx-auto flex max-w-[780px] flex-col items-center gap-4 text-center">
+          <div className="flex flex-row items-center">
+            <div className="w-4/12 rounded-full overflow-hidden">
+              <Image
+                src={myImage}
+                width={400}
+                height={400}
+                alt="An image of Isagani Esteron with neon green background"
+              />
+            </div>
 
-						<h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1] text-justify pl-4">
-							Hi! I'm
-							<span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent"> Isagani Esteron</span> a web developer.
-						</h1>
-					</div>
-					<p className="max-w-[750px] text-lg text-muted-foreground sm:text-xl text-justify">This site is my portfolio, my resume, and a collection of my thoughts on web development, all rolled into one. Take a look around, and feel free to reach out if something catches your eye!"</p>
-				</div>
-				<div className="flex flex-row gap-4">
-					<Button asChild size="lg" className="min-w-[160px]">
-						<Link href="/about">
-							Get in touch
-							<ArrowRight className="ml-2 h-4 w-4" />
-						</Link>
-					</Button>
-					<Button variant="outline" size="lg" className="min-w-[160px]">
-						Resume
-					</Button>
-				</div>
-			</section>
+            <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1] text-justify pl-4">
+              Hi! I'm
+              <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+                {' '}
+                Isagani Esteron
+              </span>{' '}
+              a web developer.
+            </h1>
+          </div>
+          <p className="max-w-[750px] text-lg text-muted-foreground sm:text-xl text-justify">
+            This site is my portfolio, my resume, and a collection of my thoughts on web
+            development, all rolled into one. Take a look around, and feel free to reach out if
+            something catches your eye!"
+          </p>
+        </div>
+        <div className="flex flex-row gap-4">
+          <Button asChild size="lg" className="min-w-[160px]">
+            <Link href="/about">
+              Get in touch
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="lg" className="min-w-[160px]">
+            Resume
+          </Button>
+        </div>
+      </section>
 
-			{/* Features Section */}
-			{/* <section className="w-full container mx-auto max-w-full space-y-6 bg-orange-50/50 py-8 dark:bg-orange-900/10 md:py-12 lg:py-24">
+      {/* Features Section */}
+      {/* <section className="w-full container mx-auto max-w-full space-y-6 bg-orange-50/50 py-8 dark:bg-orange-900/10 md:py-12 lg:py-24">
 				<div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
 					<h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">Features</h2>
 					<p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">This template comes with everything you need to build modern web applications.</p>
@@ -56,8 +69,8 @@ export default function Home() {
 					))}
 				</div>
 			</section> */}
-		</>
-	)
+    </>
+  );
 }
 
 // const features = [
