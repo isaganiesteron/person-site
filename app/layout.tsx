@@ -8,13 +8,13 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-	title: "Modern Next.js Boilerplate",
-	description: "A beautiful and minimalistic Next.js 14 boilerplate",
+	title: "Isagani Esteron",
+	description: "Personal site of Isagani Esteron",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en" suppressHydrationWarning className="dark theme-yellow">
+		<html lang="en" suppressHydrationWarning className="light theme-orange">
 			<body className={inter.className}>
 				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
 					<div className="flex min-h-screen flex-col ">
