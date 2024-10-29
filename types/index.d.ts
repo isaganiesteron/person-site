@@ -24,6 +24,16 @@ export type Block = {
     is_toggleable: boolean;
     color: string;
   };
+  heading_2?: {
+    rich_text: RichText[];
+    is_toggleable: boolean;
+    color: string;
+  };
+  heading_3?: {
+    rich_text: RichText[];
+    is_toggleable: boolean;
+    color: string;
+  };
   paragraph?: {
     rich_text: RichText[];
     color: string;

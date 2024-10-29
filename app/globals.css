@@ -107,19 +107,31 @@
     --primary: 47.9 95.8% 53.1%;
     --ring: 47.9 95.8% 53.1%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-  input, textarea {
+  input,
+  textarea {
     @apply transition-colors duration-200;
   }
   button {
     @apply transition-all duration-200;
+  }
+
+  p > a {
+    @apply underline text-blue-500 hover:text-blue-800 visited:text-purple-500;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
   }
 }

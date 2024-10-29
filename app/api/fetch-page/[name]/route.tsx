@@ -11,6 +11,7 @@ export async function GET(request: Request, params: any) {
   const { name } = params.params;
   const requestedPage = await findPage(name);
   if (!requestedPage) return NextResponse.json({ error: 'Page not found' }, { status: 404 });
+
   const page = await getPage(requestedPage.id);
   const processedBlocks = processBlocks(page as Block[]);
   return NextResponse.json(processedBlocks);

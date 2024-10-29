@@ -143,6 +143,9 @@ importers:
       next-themes:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      notion-jsx:
+        specifier: ^1.2.0
+        version: 1.2.0
       postcss:
         specifier: 8.4.30
         version: 8.4.30
@@ -2213,6 +2216,9 @@ packages:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
 
+  notion-jsx@1.2.0:
+    resolution: {integrity: sha512-0iHb/Dr3NV3V2BXEyyrllYhpezcQmiUfhL6Gr6jns2ct29U5xUo1df2c2f5doSpl6e/36kmyOnKfK0KLJ7goYg==}
+
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
@@ -2362,6 +2368,10 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  prismjs@1.29.0:
+    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
+    engines: {node: '>=6'}
+
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
@@ -2388,6 +2398,11 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
+
+  react-icons@4.12.0:
+    resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
+    peerDependencies:
+      react: '*'
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -2761,6 +2776,10 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
 
   vaul@0.9.9:
     resolution: {integrity: sha512-7afKg48srluhZwIkaU+lgGtFCUsYBSGOl8vcc8N/M3YQlZFlynHD15AE+pwrYdc826o7nrIND4lL9Y6b9WWZZQ==}
@@ -5027,6 +5046,17 @@ snapshots:
 
   normalize-range@0.1.2: {}
 
+  notion-jsx@1.2.0:
+    dependencies:
+      '@notionhq/client': 2.2.15
+      lodash: 4.17.21
+      prismjs: 1.29.0
+      react: 18.2.0
+      react-icons: 4.12.0(react@18.2.0)
+      uuid: 9.0.1
+    transitivePeerDependencies:
+      - encoding
+
   object-assign@4.1.1: {}
 
   object-hash@3.0.0: {}
@@ -5164,6 +5194,8 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
+  prismjs@1.29.0: {}
+
   prop-types@15.8.1:
     dependencies:
       loose-envify: 1.4.0
@@ -5186,6 +5218,10 @@ snapshots:
       scheduler: 0.23.2
 
   react-hook-form@7.53.1(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+
+  react-icons@4.12.0(react@18.2.0):
     dependencies:
       react: 18.2.0
 
@@ -5622,6 +5658,8 @@ snapshots:
       '@types/react': 18.2.22
 
   util-deprecate@1.0.2: {}
+
+  uuid@9.0.1: {}
 
   vaul@0.9.9(@types/react-dom@18.2.7)(@types/react@18.2.22)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:

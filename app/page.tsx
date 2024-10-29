@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Layers, Code, Palette } from 'lucide-react';
 
 import Image from 'next/image';
-import myImage from 'public/isaganiesteron-image.png';
+import myImage from '@/public/isaganiesteron-image.png';
 
 export default function Home() {
   return (
