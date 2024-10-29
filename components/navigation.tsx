@@ -2,11 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ModeToggle } from '@/components/mode-toggle';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect, ReactElement } from 'react';
+
+import logo from '@/public/isaganiesteron-logo.svg';
 
 const routes = [
   {
@@ -33,10 +36,15 @@ export default function Navigation() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="container mx-auto max-w-4xl flex h-16 px-4 items-center justify-end">
-        {/* <Link href="/" className="flex items-center space-x-2">
-					<span className="text-xl font-bold">{"<IE/>"}</span>
-				</Link> */}
+      <nav className="container mx-auto max-w-4xl flex h-16 px-4 items-center justify-between">
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src={logo}
+            width={150}
+            height={150}
+            alt="An image of Isagani Esteron with neon green background"
+          />
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:space-x-6">
